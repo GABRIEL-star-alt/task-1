@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <style>
+#mode{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30%;
+    bottom: 20%;
+    position:absolute;
+}
+#p1{
+    border-radius: 20px;
+height: 100px;
+background: linear-gradient(green,yellow);
+/* opacity: 0.4; */
+text-decoration: none;
+bottom:20px;
+width:100%;
+
+}
+#p2{
+    border-radius: 20px;
+    margin-top: 10%;
+    height: 100px;
+    background: linear-gradient(green,yellow);
+    /* opacity: 0.4; */
+    text-decoration: none;
+bottom:20px
+
+}
+a{
+    text-decoration: none;
+    font-size: large;
+    font-family: "Sofia", sans-serif;
+font-weight: 500;
+color: rgb(224, 4, 4);
+font-size: xx-large;
+}
+body{
+    width: fit-content;
+    display: block;
+    text-align: center;
+    background-image:url("sg.jpg")
+}
+#p1:hover{
+    opacity:1;
+    text-decoration: none;
+
+}
+#p2:hover{
+    opacity:1;
+}
+h1{
+    margin-top: 10%;
+    color: aquamarine;
+    font-size: xx-large;
+    scale: 3;
+text-shadow: 2px 2px #ff0000;;
+}
+
+
+    </style>
+
+</head>
+<body>
+<!-- <h1> Rattle<br>Battle</h1> -->
+    <div id="mode">
+    <button id="p1" >
+<a href="first.html">1 PLAYER</a>
+    </button>
+    <button id="p2" >
+        <a href="p1cred.html"> 2 PLAYER</a> </button>
+        </div>
+        <script>
+            console.log("HGFDSDFG")
+            var x=0
+            var c=0
+            setInterval(d,200)
+            function d(){
+                c=Math.random()
+          document.getElementById("p1").style.opacity=`${c}`
+          document.getElementById("p2").style.opacity=`${c}`
+
+            }
+    
+    
+
+        </script>
+</body>
+</html>
